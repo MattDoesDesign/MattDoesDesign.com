@@ -6,7 +6,7 @@
     font-weight: normal;
     font-style: normal;
 
-	 text-rendering: optimizeLegibility;
+	-text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
 	-webkit-text-stroke: 0.24px;
 	-moz-osx-font-smoothing: grayscale;
@@ -26,35 +26,25 @@
 }
 
 body {
-  background-image: url("contour_screenshot16.png");
-  background-repeat: no-repeat;
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: -1;
+  background-color: rgb(10,10,10);
 }
 
-/* use screenshot instead of video on mobile devices 
+/* use screenshot instead of video on mobile devices  */
 @media (max-width: 750px) {
     #background-video { display: none; }
     body {
-      background: url("contour_screenshot16.png") no-repeat;
+      background: url("contour_static.png") no-repeat;
       background-size: cover;
     }
 }
-*/
+
 
 /* header logo styles */
 .logocontainer {
   position: relative;
   text-align: center;
   color: white;
-  text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
   font-size: 40px;
   font-weight: 1;
   font-family: icomoonregular, "Times New Roman", Times;
@@ -63,7 +53,7 @@ body {
 .logocentre {
   position: absolute;
   left: 0px;
-  width: 480px;
+  width: 400px;
   padding: 64px;
 }
 
@@ -74,7 +64,7 @@ body {
 }
 
 .logotext {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);

@@ -1,0 +1,236 @@
+/* custom font */
+@font-face {
+    font-family: 'icomoonregular';
+    src: url('mdd_tnr_icomoon-webfont.woff2') format('woff2'),
+         url('mdd_tnr_icomoon-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+	-text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+	-webkit-text-stroke: 0.24px;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* video background */
+#backgroundVideo {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: rgb(10,10,10);
+}
+
+
+.maincontainer {
+  min-height: 100%;
+  position: relative;
+}
+
+/* header logo styles */
+.logocontainer {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
+  font-size: 40px;
+  font-weight: 1;
+  font-family: icomoonregular, "Times New Roman", Times;
+  padding: 64px;
+  padding-bottom: 320px;
+}
+
+/*.logocentre {
+  position: absolute;
+  left: 0px;
+}*/
+
+#logo {
+  width: 400px;
+  height: 128px;
+  background-color: rgba(0,0,0,0); /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom right, rgba(85,54,125,0.48), rgba(58,179,176,0.48));
+}
+
+.logotext {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* link styles */
+.blockcontainer {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding-bottom: 64px;
+  padding-left: 64px;
+}
+
+
+.linkscontainer {
+  display: inline-block;
+  width: 200px;
+  height: 100%;
+}
+
+.buttonheader {
+  position: relative;
+  left:0px;
+  text-align: left;
+  color: white;
+  font-size: 16px;
+  font-weight: 1;
+  font-family: icomoonregular, "Times New Roman", Times;
+  padding-bottom: 16px;
+}
+
+
+.buttonpadding {
+  padding-bottom: 24px;
+}
+
+.bottombuttonpadding {
+  padding-bottom: 0px;
+}
+
+
+.link {
+  position: relative;
+  left:0px;
+  text-align: left;
+  color: white;
+  font-size: 32px;
+  font-weight: 1;
+  font-family: icomoonregular, "Times New Roman", Times;
+}
+
+a:link {
+  text-decoration: none;
+  color: white;
+}
+
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+a:active {
+  text-decoration: none;
+  color: white;
+}
+
+
+/* media queries */
+
+/* use screenshot instead of video on mobile devices  */
+@media screen and (max-width: 480px) {
+    #background-video { display: none; }
+    body {
+      background: url("contour_static.png") no-repeat;
+      background-size: cover;
+    }
+}
+
+/* small screens */
+
+@media screen and (max-width: 800px) {
+        /* header logo styles */
+        .logocontainer {
+          position: relative;
+          text-align: center;
+          color: white;
+          text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
+          font-size: 20px;
+          font-weight: 1;
+          font-family: icomoonregular, "Times New Roman", Times;
+        }
+
+        .logocentre {
+          position: absolute;
+          left: 0px;
+          padding: 32px;
+        }
+
+        #logo {
+          width: 200px;
+          height: 64px;
+          background-color: rgba(0,0,0,0); /* For browsers that do not support gradients */
+          background-image: linear-gradient(to bottom right, rgba(85,54,125,0.48), rgba(58,179,176,0.48));
+        }
+
+        .logotext {
+          position: relative;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+
+
+
+        /* link styles */
+        .blockcontainer {
+          position: relative;
+          padding: 32px;
+          display: flex;
+          flex-wrap: wrap;
+        }
+
+
+        .linkscontainer {
+          top: 320px;
+        }
+
+        .buttonheader {
+          position: relative;
+          left:0px;
+          text-align: left;
+          color: white;
+          font-size: 14px;
+          font-weight: 1;
+          font-family: icomoonregular, "Times New Roman", Times;
+          padding-bottom: 8px;
+        }
+
+        .buttonpadding {
+          padding-bottom: 12px;
+        }
+
+        .bottombuttonpadding {
+          padding-bottom: 32px;
+        }
+
+        .link {
+          position: relative;
+          left:0px;
+          text-align: left;
+          color: white;
+          font-size: 20px;
+          font-weight: 1;
+          font-family: icomoonregular, "Times New Roman", Times;
+        }
+
+
+
+  }
+}

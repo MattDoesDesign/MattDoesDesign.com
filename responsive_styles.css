@@ -154,15 +154,16 @@ a:active {
 @media screen and (max-width: 1128px) {
         /* header logo styles */
         .logocontainer {
-          position: relative;
+          height: 100%;
           text-align: center;
           color: white;
           text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
-          font-size:calc(10px + 2.4vw);
+          font-size:calc(12px + 2.4vw);
           font-weight: 1;
           font-family: icomoonregular, "Times New Roman", Times;
           padding-top: 5.6vw;
           padding-left: 5.6vw;
+          padding-bottom: 5.6vw;
         }
 
         .logocentre {
@@ -172,9 +173,9 @@ a:active {
 
         #logo {
           max-width: 400px;
-          min-width: 200px;
+          min-width: 240px;
           max-height: 128px;
-          min-height: 64px;
+          min-height: 77px;
           width: 35.5vw;
           height: 11.2vw;
           background-color: rgba(0,0,0,0); /* For browsers that do not support gradients */
@@ -193,14 +194,16 @@ a:active {
         /* link styles */
         .blockcontainer {
           position: relative;
-          padding: 5.6vw;
-          display: flex;
-          flex-wrap: wrap;
+          padding-bottom: 5.6vw;
+          padding-left: 5.6vw;
+          padding-top: 5.6vw;
+
         }
 
 
         .linkscontainer {
-          top: 320px;
+          display: inline;
+          width: 200px;
         }
 
         .buttonheader {

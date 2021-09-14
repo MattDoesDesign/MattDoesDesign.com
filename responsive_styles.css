@@ -28,12 +28,8 @@
 html, body {
   height: 100%;
   width: 100%;
+  margin: 0;
 }
-
-body {
-  background-color: rgb(10,10,10);
-}
-
 
 .maincontainer {
   min-height: 100%;
@@ -79,7 +75,6 @@ body {
   padding-left: 64px;
 }
 
-
 .linkscontainer {
   display: inline-block;
   width: 200px;
@@ -91,12 +86,11 @@ body {
   left:0px;
   text-align: left;
   color: white;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 1;
   font-family: icomoonregular, "Times New Roman", Times;
   padding-bottom: 8px;
 }
-
 
 .buttonpadding {
   padding-bottom: 24px;
@@ -105,7 +99,6 @@ body {
 .bottombuttonpadding {
   padding-bottom: 0px;
 }
-
 
 .link {
   position: relative;
@@ -138,9 +131,11 @@ a:active {
 }
 
 
-/* media queries */
 
-/* use screenshot instead of video on mobile devices  */
+
+/* small screens */
+
+		/* background video */
 @media screen and (max-width: 720px) {
     #background-video { display: none; }
     body {
@@ -149,7 +144,6 @@ a:active {
     }
 }
 
-/* small screens */
 
 @media screen and (max-width: 1160px) {
         /* header logo styles */

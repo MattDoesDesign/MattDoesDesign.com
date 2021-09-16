@@ -180,7 +180,7 @@ a:active {
 }
 
 .sendbutton{
-  background-color: rgba(32,32,32,0.9);
+  background-color: rgba(48,48,48,0.9);
   border: 0;
   margin: 0;
   padding: 0;
@@ -191,12 +191,12 @@ a:active {
   font-family: icomoonregular, "Times New Roman", Times;
   color: white;
   text-align: left;
-  border-top: 1px solid rgba(48,48,48,0.9);
+  border-top: 1px solid rgba(64,64,64,0.9);
   box-sizing: border-box;
 }
 
 .sendbutton:hover{
-  background-color: rgba(48,48,48,0.9);
+  background-color: rgba(32,32,32,0.9);
 }
 
 .sendpadding{
@@ -339,7 +339,8 @@ a:active {
 		  margin: 0;
 		  padding-left: 1.2vw;
 		  width: 100%;
-		  height: 400px;
+		  height: 20vh;
+		  min-height: 160px;
 		  font-size: calc(12px + 1.1vw);
 		  font-weight: 1;
 		  font-family: icomoonregular, "Times New Roman", Times;
@@ -350,7 +351,7 @@ a:active {
 		
 
 		.sendbutton{
-		  background-color: rgba(32,32,32,0.9);
+		  background-color: rgba(48,48,48,0.9);
 		  border: 0;
 		  margin: 0;
 		  padding: 0;
@@ -361,7 +362,7 @@ a:active {
 		  font-family: icomoonregular, "Times New Roman", Times;
 		  color: white;
 		  text-align: left;
-		  border-top: 1px solid rgba(48,48,48,0.9);
+		  border-top: 1px solid rgba(64,64,64,0.9);
 		  box-sizing: border-box;
 		}
 		

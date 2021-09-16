@@ -48,7 +48,7 @@ html, body {
   padding-top: 64px;
   padding-right: 0px;
   padding-left: 64px;
-  padding-bottom: 320px;
+  padding-bottom: 64px;
 }
 
 #logo {
@@ -67,7 +67,6 @@ html, body {
 
 /* link styles */
 .blockcontainer {
-
   position: absolute;
   left: 0;
   bottom: 0;
@@ -130,8 +129,79 @@ a:active {
   color: white;
 }
 
+/* contact form */
 
+.formcontainer {
+  position: relative;
+  padding-left: 64px;
+  padding-bottom: 400px;
+  width: 960px;
+}
+  
+.formtext {
+  text-align: left;
+  padding-bottom: 16px;
+}
 
+.forminputstyle{
+  background-color: rgba(32,32,32,0.9);
+  border: 0;
+  margin: 0;
+  padding-left: 12px;
+  width: 100%;
+  height: 32px;
+  font-size: 20px;
+  font-weight: 1;
+  font-family: icomoonregular, "Times New Roman", Times;
+  color: white;
+  box-sizing:border-box;
+}
+
+.forminputstyle:focus {
+    outline-width: 0;
+}
+
+.formmessageinputstyle{
+  background-color: rgba(32,32,32,0.9);
+  border: 0;
+  margin: 0;
+  padding-left: 12px;
+  width: 100%;
+  height: 400px;
+  font-size: 20px;
+  font-weight: 1;
+  font-family: icomoonregular, "Times New Roman", Times;
+  color: white;
+  box-sizing:border-box;
+}
+
+.formmessageinputstyle:focus {
+    outline-width: 0;
+}
+
+.sendbutton{
+  background-color: rgba(32,32,32,0.9);
+  border: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 40px;
+  font-size: 20px;
+  font-weight: 1;
+  font-family: icomoonregular, "Times New Roman", Times;
+  color: white;
+  text-align: left;
+  border-top: 1px solid rgba(48,48,48,0.9);
+  box-sizing: border-box;
+}
+
+.sendbutton:hover{
+  background-color: rgba(48,48,48,0.9);
+}
+
+.sendpadding{
+	padding-left: 12px;	
+}
 
 /* small screens */
 
@@ -231,5 +301,72 @@ a:active {
 
 
 
+		/* contact form */
+
+		.formcontainer {
+		  position: relative;
+		  padding-left: 5.6vw;
+		  padding-right: 5.6vw;
+		  padding-bottom: 5.6vw;
+		  width: inherit;
+		  
+		}
+		  
+		.formtext {
+		  text-align: left;
+		  padding-bottom: 16px;
+		}
+
+		.forminputstyle{
+		  background-color: rgba(32,32,32,0.9);
+		  border: 0;
+		  margin: 0;
+		  padding-left: 1.2vw;
+		  width: 100%;
+		  height: calc(18px + 1.6vw);
+		  font-size: calc(12px + 1.1vw);
+		  font-weight: 1;
+		  font-family: icomoonregular, "Times New Roman", Times;
+		  color: white;
+		  box-sizing:border-box;
+		}
+
+		
+
+		.formmessageinputstyle{
+		  background-color: rgba(32,32,32,0.9);
+		  border: 0;
+		  margin: 0;
+		  padding-left: 1.2vw;
+		  width: 100%;
+		  height: 400px;
+		  font-size: calc(12px + 1.1vw);
+		  font-weight: 1;
+		  font-family: icomoonregular, "Times New Roman", Times;
+		  color: white;
+		  box-sizing:border-box;
+		}
+
+		
+
+		.sendbutton{
+		  background-color: rgba(32,32,32,0.9);
+		  border: 0;
+		  margin: 0;
+		  padding: 0;
+		  width: 100%;
+		  height: calc(20px + 1.6vw);
+		  font-size: calc(12px + 1.1vw);
+		  font-weight: 1;
+		  font-family: icomoonregular, "Times New Roman", Times;
+		  color: white;
+		  text-align: left;
+		  border-top: 1px solid rgba(48,48,48,0.9);
+		  box-sizing: border-box;
+		}
+		
+		.sendpadding{
+				padding-left: 1.2vw;
+		}
   }
 }
